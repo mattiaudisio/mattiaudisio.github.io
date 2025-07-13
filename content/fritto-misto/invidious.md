@@ -18,7 +18,7 @@ Invidious può essere installato sia tramite Docker che tramite Podman, ma in qu
 
 Quindi, prima di cominciare, bisogna installare Podman sul nostro computer tramite questo comando:
 
-```
+```shell
  sudo dnf install podman-compose pwgen
 ```
 
@@ -28,7 +28,7 @@ Ora possiamo cominciare.
 
 In primis bisogna scaricare la Github il repository ufficiale di Invidious ed entrare dentro la directory appena creata
 
-```
+```shell
 git clone https://github.com/iv-org/invidious.git
 cd invidious
 ```

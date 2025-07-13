@@ -122,10 +122,6 @@ home = "Home"
 
 # Social icons
 [[params.social]]
-name = "linkedin"
-url = "https://www.linkedin.com/in/user/"
-
-[[params.social]]
 name = "medium"
 url = "https://medium.com/@user"
 

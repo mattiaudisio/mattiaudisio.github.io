@@ -38,13 +38,13 @@ Dopo aver scaricato il file, ritornare alla pagina principale (https://console.c
 
 Scaricare tra i pacchetti del sito, tramite composer, i pacchetti PHP di Google API:
 
-```
+```php
 composer require google/apiclient:^2.15.0
 ```
 
 Dopo aver fatto, cominciamo a scaricare il pacchetto di Spatie:
 
-```
+```php
 composer require spatie/laravel-google-calendar
 php artisan vendor:publish --provider="Spatie\GoogleCalendar\GoogleCalendarServiceProvider"
 ```

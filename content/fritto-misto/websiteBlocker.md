@@ -21,8 +21,7 @@ Prima di partire col progetto, bisogna abilitare i permessi di scrittura del fil
 
 Come prima cosa, creiamo il layout grafico del nostro progetto, così per avere una base da cui partire. Importiamo le librerie Python [Tkinter](https://docs.python.org/3/library/tkinter.html) (per creare layout grafici) e [PIL](https://pillow.readthedocs.io/en/stable/) (che aggiunge il supporto per l'apertura, la manipolazione e il salvataggio di diversi formati di file immagine), poi salviamoci dentro 2 variabili  la posizione del file hosts (_C:\Windows\System32\drivers\etc\hosts_) dando il permesso di scrittura e l'indirizzo Ip locale (127.0.0.1).
 
-```
-
+```python
  from tkinter import *
  from PIL import Image, ImageTk
 
@@ -35,7 +34,7 @@ Ora, sovente sono abituato a utilizzare classi e oggetti dell'OOP (programmazion
 
 Creiamo la Classe Blocker, inizializzando gli attributi per creare tramite tkinter il “rettangolo” del programma, l'array in cui verranno inseriti i link da bloccare e i vari bottoni a lato con cui bloccare/sbloccare i siti.
 
-```
+```python
  class Blocker:
 
      def __init__(self):
@@ -69,7 +68,7 @@ Creiamo la Classe Blocker, inizializzando gli attributi per creare tramite tkint
 
 Ora creiamo una funzione start, in modo che all'esecuzione del programma venga creata la finestra con i parametri settati in precedenza
 
-```
+```python
  def start(self):
          self.root.mainloop()
 ```
@@ -78,7 +77,7 @@ Ora creiamo una funzione start, in modo che all'esecuzione del programma venga c
 
 Come avrai notato, i tre bottoni permettono di bloccare tre tipi di siti: social networrk, siti porno, le due opzioni precedenti. Quindi ora la nostra attenzione deve concentrarsi su 3 importanti funzioni: blocca social, blocca porno, blocca tutto. Le 2 funzioni blocca social e blocca porno hanno al loro interno un array che contiene dei link (i siti da bloccare) e un controllo che modifica la scritta dei due bottoni da blocca * a sblocca * e, a seconda se il titolo del bottone a un testo o l'altro, vengono chiamate le funzioni per bloccare e sbloccare i siti. la funzione blocca tutto richiama le due funzioni citate prima
 
-```
+```python
  def blockSocial(self):
     site = ['www.instagram.com', 'instagram.com', 'tiktok.com', 'www.tiktok.com', 'twitter.com']
     self.site_to_block.extend(site)
@@ -107,7 +106,7 @@ Come avrai notato, i tre bottoni permettono di bloccare tre tipi di siti: social
 Per finire, creiamo le due funzioni che creano il cuore di questo programma, le funzioni blockwebsites e unblockwebsites.
 La funzione blockwebsites, tramite l'array con i siti e dei for, scrive sul file host l'url del sito, mentre unblockwebsite li toglie.
 
-```
+```python
  self.unblock_website()
 
  def block_websites(self):
@@ -134,7 +133,7 @@ La funzione blockwebsites, tramite l'array con i siti e dei for, scrive sul file
 
 Per terminare, creiamo un oggetto Blocker e chiamiamo la funzione start.
 
-```
+```python
  app = Blocker()
  app.start()
 ```
@@ -143,7 +142,7 @@ Per terminare, creiamo un oggetto Blocker e chiamiamo la funzione start.
 
 <br />
 
-```
+```python
 
  from tkinter import *
  from PIL import Image, ImageTk

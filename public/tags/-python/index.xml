@@ -6,8 +6,15 @@
     <description>Recent content in 👨‍💻 Python on Mattia Audisio</description>
     <generator>Hugo -- 0.146.0</generator>
     <language>it-it</language>
-    <lastBuildDate>Wed, 20 Dec 2023 21:07:49 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 13 Jul 2025 10:19:25 +0200</lastBuildDate>
     <atom:link href="https://mattiaudisio.github.io/tags/-python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>una capsula del tempo pieno di codice Python</title>
+      <link>https://mattiaudisio.github.io/fritto-misto/python/</link>
+      <pubDate>Sun, 13 Jul 2025 10:19:25 +0200</pubDate>
+      <guid>https://mattiaudisio.github.io/fritto-misto/python/</guid>
+      <description>Un post-raccolta per fare spazio, fare ordine, e magari anche un po’ pace con Python</description>
+    </item>
     <item>
       <title>Creare un intero podcast artificialmente</title>
       <link>https://mattiaudisio.github.io/fritto-misto/podcastartificiales/</link>

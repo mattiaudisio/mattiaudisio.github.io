@@ -14,7 +14,7 @@ Ieri, mentre cazzeggiavo nella timeline locale, mi sono imbattuto in  [questo po
 
 Ok, lo so che può suonare strano agli smanettoni dell'IA, ma guardiamo un attimo cosa c'è:
 
-```
+```shell
  Riciclando del vecchio codice che avevo scritto e aggiungendo qualcosa di  nuovo, in 5 min e 
  38 righe di codice ho messo in piedi uno script in python che:
  – Scarica un articolo da una famosa testata giornalistica
@@ -55,7 +55,7 @@ Partiamo da una cosa, che non ho mai preso seriamente in considerazione ma perch
 Perchè non lo prendo in considerazione.... perchè sono solito usare il comando pip... vabbè
 
 **requirments.txt**
-```
+```python
  beautifulsoup4==4.10.0
  openai==0.27.0
 ```
@@ -80,7 +80,7 @@ Senza troppi giri di parole, dato che non mi so spiegare, ecco qua lo script fin
 
 **script.py**
 
-```
+```python
  import openai
  from bs4 import BeautifulSoup
  import requests

@@ -24,25 +24,25 @@ Quando si creano applicazioni Node, una via veloce è usare appunto dei template
 
 Innanzitutto, apri la finestra del terminale e crea una nuova directory di progetto:
 
-```
+```shell
 mkdir ejs-demo
 ```
 
 Quindi, entriamo dentro la cartella appena creata e inizializziamo un nuovo progetto npm:
 
-```
+```shell
 npm init -y
 ```
 
 Successivamente, dovrai installare Il pacchetto `express`:
 
-```
+```shell
 npm install express@4.17.1
 ```
 
 Quindi installare il pacchetto `ejs`:
 
-```
+```shell
 npm install ejs@3.1.6
 ```
 
@@ -52,7 +52,7 @@ A questo punto, sei pronto ad usare Express e EJS.
 
 Cominciamo creando un file server.js, dove mettere all'interno queste righe di codice:
 
-```
+```js
 var express = require('express');
 var app = express();
 
@@ -87,14 +87,14 @@ Come molte delle applicazioni che costruisci, ci sarà un sacco di codice che vi
 
 Cominciamo col creare una cartella `views` e la sua subdirectory `partials`:
 
-```
+```shell
 mkdir views
 mkdir views/partials
 ```
 
 All'interno di partials, creiamo un file `head.ejs` dove aggiungiamo:
 
-```
+```html
 <meta charset="UTF-8">
 <title>EJS Is Fun</title>
 
@@ -109,7 +109,7 @@ Questo codice contiene i metadati per `head`Per un documento HTML. Include anche
 
 Ora, creiamo il file `header.ejs`, che contiene la navigazione per un documento HTML e utilizza diverse classi di Bootstrap per lo styling:
 
-```
+```html
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="/">EJS Is Fun</a>
   <ul class="navbar-nav mr-auto">
@@ -125,7 +125,7 @@ Ora, creiamo il file `header.ejs`, che contiene la navigazione per un documento 
 
 Infine, creiamo il file `footer.ejs`, che contiene informazioni sul copyright e utilizza diverse classi di Bootstrap per lo styling.
 
-```
+```html
 <p class="text-center text-muted">&copy; Copyright 2020 The Awesome People</p>
 ```
 ### Passaggio 3 - Aggiunta dei Partials EJS al View
@@ -135,13 +135,13 @@ Ora è arrivato il momento di includere, tramite il comando `include`, le tre pa
 
 Quindi, creiamo una subdirectory `pages`:
 
-```
+```shell
 mkdir views/pages
 ```
 
 In questa directory, creare una nuovo file `index.ejs`:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -174,7 +174,7 @@ Salviamo le modifiche e vediamo come stiamo andando. Fai partire l'applicazione 
 
 Ora, invece, creiamo il file `about.ejs`, aggiunge una barra laterale di Bootstrap, giusto per differenziarlo dall'altro:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -222,7 +222,7 @@ Definiamo alcune variabili di base e un elenco da passare alla pagina index.
 
 modifichiamo un attimo `server.js`  aggiungendo altro codice. All'interno di `app.get('/')` definiamo un array chiamato `mascots` e una stringa chiamata `tagline`:
 
-```
+```js
 var express = require('express');
 var app = express();
 
@@ -261,7 +261,7 @@ Per trasferire  una singola variabile, è possibile utilizzare `<%= tagline %>`.
 
 All'interno di `index.ejs`, aggiungiamo queste due righe dentro al `<main>`, in modo da visualizzare il valore `tagline`nell'index: 
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -295,7 +295,7 @@ _**Loop dei dati**_
 
 Per loop sui dati, è possibile utilizzare `.forEach`:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -343,7 +343,7 @@ _**Trasferire i dati ad un partials**_
 
 È possibile definire e passare variabili a un partials EJS usando una sintassi come questa:
 
-```
+```html
 (views/pages/about.ejs)
 
 ...
@@ -357,7 +357,7 @@ Ma devi ancora fare attenzione ad presumere che sia stata definita una variabile
 
 Se si desidera fare riferimento a una variabile in una parziale che potrebbe non essere sempre definita, e darle un valore predefinito, è possibile farlo in questo modo:
 
-```
+```html
 views/partials/header.ejs
 
 ...

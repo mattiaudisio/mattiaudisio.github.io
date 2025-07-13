@@ -50,7 +50,7 @@ Ora che abbiamo la base su cui cominciare, è ora di far entrare in scena il pro
 
 A questo punto sarai dentro il “processo di installazione di Astro” (facciamo che chiamarlo così). La prima cosa che ti uscirà è mettere il nome del sito
 
-```
+```shell
  Welcome to Astro! (create-astro v1.1.0)
  Lets walk through setting up your new Astro project.
  ? Where would you like to create your new project? >> nomeDelSito
@@ -63,7 +63,7 @@ Bene, a questo punto hai installato Astro dentro il tuo sito, veloce no come pro
 
 Se sei ancora incerto che abbia installato qualcosa, vai dentro la cartella developer e guarda se ti ha creato una cartella con il nome che hai inserito; Altrimenti digita _cd nomeDelSito_ e digita _yarn start_, ti è uscito una cosa del genere?
 
-```
+```shell
  yarn run v1.22.19
  $ astro dev
     astro  v1.4.2 started in 49ms

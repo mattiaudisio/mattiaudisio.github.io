@@ -73,6 +73,7 @@ Ed e qua che viene in aiuto questa pagina.. una lista di video, musica, libri e 
 - [Why things Feel “OFF” Lately — The GLITCH.](https://youtu.be/wsF3REbr-44)
 - [Ego e live coding (a ben vedere, un discorso che vale per molto altro)](https://youtu.be/dEL0eE0ECqg?feature=shared)
 - [streaming was a mistake...](https://youtu.be/RDmzV9GGySg?feature=shared)
+- [Tiktok e Instagram mi stavano rovinando la vita](https://www.youtube.com/watch?v=otusVtJ9wDQ)
 
 
 ## 🎬 Video raccolta su self hosting e linux
@@ -132,6 +133,7 @@ Ed e qua che viene in aiuto questa pagina.. una lista di video, musica, libri e 
 - [Young adults in Europe are putting away smartphones](https://www.dw.com/en/young-adults-in-europe-are-putting-away-smartphones/a-72623121)
 - [Creo dentro le piattaforme, dunque sono schiavo.](https://beboguidetti.it/2025/05/27/creo-dentro-le-piattaforme-dunque-sono-schiavo/)
 - [So You Decided to Swap to Linux?](https://the-kjellberg-mail.beehiiv.com/p/so-you-decided-to-swap-to-linux-60ec908e80b94df7)
+- [How to Be Anonymous on Social Media](https://nbtv.substack.com/p/how-to-be-anonymous-on-social-media)
 
 ## 🔗 Siti web
 

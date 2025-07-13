@@ -13,7 +13,6 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-  <a href="https://linkedin.com/in/mattia-audisio" target="blank"><img align="center" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="mattia-audisio" /></a>
   <a href="https://mattiaudisio.github.io/" target="blank"><img align="center" src="https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white" alt="mattia-audisio" /></a>
  <a href="https://livellosegreto.it/@piacerematthew" target="blank"><img align="center" src="https://img.shields.io/badge/Mastodon-6364FF?style=for-the-badge&logo=Mastodon&logoColor=white" alt="mattia-audisio" /></a>
  <a href="https://www.youtube.com/@unAltroNPCsuYouTube" target="blank"><img align="center" src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="mattia-audisio" /></a>

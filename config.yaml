@@ -76,8 +76,6 @@ params:
     Content: Welcome to my blog
 
   socialIcons:
-    - name: linkedin
-      url: "https://www.linkedin.com/in/mattia-audisio/"
     - name: github
       url: "https://github.com/mattiaudisio"
     - name: email

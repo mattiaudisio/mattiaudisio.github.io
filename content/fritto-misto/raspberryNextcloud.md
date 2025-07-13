@@ -20,22 +20,21 @@ Tutto quello che c'è scritto qua dentro è una specie di cronologia che mi perm
 
 Prima di installare NextCloud, è necessario disporre di alcuni prerequisiti sul sistema. NextCloud ha bisogno di un server web con Apache, MySQL (MariaDB) e PHP, in particolare di alcuni moduli PHP.
 
-```
+```shell
  sudo apt install apache2 mariadb-server libapache2-mod-php
  sudo apt install php-gd php-json php-mysql php-curl php-mbstring php-intl php-imagick php-xml php-zip
 ```
 
 Attendi qualche minuto per il completamento dell'installazione e riavviare Apache per caricare i nuovi moduli PHP:
 
-```
-
+``` shell
  sudo service apache2 restart
 
 ```
 
 Per installare Nextcloud bisogna andare nelle cartelle di Apache web e installare l'ultima releas di Nextcloud
 
-```
+```shell
  cd /var/www/html
  sudo wget https://download.nextcloud.com/server/releases/latest.zip
  sudo unzip latest.zip
@@ -44,7 +43,7 @@ Per installare Nextcloud bisogna andare nelle cartelle di Apache web e installar
 
 Se ti da dei problemi ad estrarre i file devi modificare i permessi della cartella per consentire ad Apache di accedervi
 
-```
+```shell
  sudo chmod 750 nextcloud -R
  sudo chown www-data:www-data nextcloud -R
 ```
@@ -55,8 +54,7 @@ NextCloud è quasi pronto per essere utilizzato, ma dobbiamo prima creare un dat
 
 Dopo l'installazione del server MariaDB, viene creato un utente root che può essere utilizzato solo dalla riga di comando. Connettiti a MYSQl tramite ```sudo mysql``` e copia questo file sql
 
-```
-
+```sql
  -- Create the new user
  CREATE USER 'nextcloud' IDENTIFIED BY 'password';
  -- Create the new database
@@ -76,7 +74,7 @@ Il problema mi usciva colpa la versione di PHP che avevo installato. Ho risolto 
 
 installo PHP 8.3
 
-```
+```shell
  sudo wget -qO /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
  echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/php.list
  sudo apt update
@@ -85,7 +83,7 @@ installo PHP 8.3
 
 Poi ho cambiato la versione di Default con questi comandi:
 
-```
+```shell
  sudo a2dismod php* 
  sudo a2enmod php8.3 
  sudo systemctl restart apache2 

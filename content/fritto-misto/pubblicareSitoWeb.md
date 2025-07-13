@@ -40,7 +40,7 @@ Subito dopo, andando sul sito che dove hai comprato il tuo dominio, bisogna modi
 
 **A**
 
-```
+```html
  185.199.108.153
  185.199.109.153
  185.199.110.153
@@ -50,7 +50,7 @@ Subito dopo, andando sul sito che dove hai comprato il tuo dominio, bisogna modi
 
 **AAA**
 
-```
+```html
  2606:50c0:8000::153
  2606:50c0:8001::153
  2606:50c0:8002::153

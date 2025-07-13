@@ -46,7 +46,7 @@ Per chi come me ha Proton Mail gratutito sa che non è possibile collegarlo a th
 
 Se utilizzi Linux o macOS, puoi usare un semplice script da terminale per unire i file EML in un file MBOX:
 
-```
+```shell
 for e in *.eml
 do
   date +"From - %a %b %d %H:%M:%S %Y" >> file.mbox
