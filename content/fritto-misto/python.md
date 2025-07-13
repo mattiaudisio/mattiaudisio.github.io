@@ -12,7 +12,7 @@ ShowShareButtons: true
 
 Ho cominciato a programmare circa dieci anni fa, in terza superiore, e da allora qualche giovedì sicuramente è passato.
 
-In questi anni ho sperimentato diversi linguaggi di programmazione: alcuni li ho odiati con ogni fibra del mio corpo, altri sono diventati gli strumenti con cui oggi porto a casa la pagnotta. Tra tutti, però, il linguaggio con cui ho avuto il rapporto più intenso — un misto di amore e odio — è stato Python.
+In questi anni ho sperimentato diversi linguaggi di programmazione: alcuni li ho odiati con ogni fibra del mio corpo, altri sono diventati gli strumenti [con cui oggi porto a casa la pagnotta](https://youtube.com/playlist?list=PLP5MAKLy8lP-9p-hsprIbRAqfiExIx3r2). Tra tutti, però, il linguaggio con cui ho avuto il rapporto più intenso — un misto di amore e odio — è stato Python.
 
 Python è stato il terzo linguaggio che ho imparato a scuola, dopo C e Shell Script. All’inizio è stato fondamentale per approfondire il mondo della programmazione, in particolare quello della programmazione orientata agli oggetti (OOP).
 
