@@ -74,6 +74,7 @@ Ed e qua che viene in aiuto questa pagina.. una lista di video, musica, libri e 
 - [Ego e live coding (a ben vedere, un discorso che vale per molto altro)](https://youtu.be/dEL0eE0ECqg?feature=shared)
 - [streaming was a mistake...](https://youtu.be/RDmzV9GGySg?feature=shared)
 - [Tiktok e Instagram mi stavano rovinando la vita](https://www.youtube.com/watch?v=otusVtJ9wDQ)
+- [Degooglizzazione: come e perché dire no a Google](https://videoteca.kenobit.it/w/78KdnRFGvtk4BZZ9vNj53y)
 
 
 ## 🎬 Video raccolta su self hosting e linux
