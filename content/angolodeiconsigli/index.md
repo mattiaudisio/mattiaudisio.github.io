@@ -76,7 +76,18 @@ Ed e qua che viene in aiuto questa pagina.. una lista di video, musica, libri e 
 - [Tiktok e Instagram mi stavano rovinando la vita](https://www.youtube.com/watch?v=otusVtJ9wDQ)
 - [Degooglizzazione: come e perché dire no a Google](https://videoteca.kenobit.it/w/78KdnRFGvtk4BZZ9vNj53y)
 - [Dev portfolio sins](https://youtu.be/qxYg6pl-sJQ)
-
+- [supermercati diabetici nell'isola dei fast food (la vendetta del PINGUINO)](https://www.youtube.com/watch?v=8Yl9xzAp4RA)
+- [L'esperienza Linux - 1 anno dopo](https://www.youtube.com/watch?v=X5H9GTUsdu8)
+- [Why I Deleted My Second Brain: A Journey Back to Real Thinking](https://youtu.be/CjSWwmg-JRM)
+- [Riconosco subito la scrittura AI: ecco come puoi farlo anche tu](https://youtu.be/9Ch4a6ffPZY)
+- [Dovremmo sentirci in colpa per l'uso dell'intelligenza artificiale? 😬](https://youtu.be/B9P5fSrT104)
+- [You Can't Beat Steam](https://youtu.be/PJaC8YLK7p4)
+- [Perché tutti stanno cancellando Duolingo in questo momento](https://www.youtube.com/watch?v=8NNSHMjlVJQ)
+- [The problem with simulating society in Minecraft](https://youtu.be/6WJT-jPV1Mo)
+- [Game Theory is the Cheat Code to Life](https://www.youtube.com/watch?v=PLJU5nC3pmU)
+- [I hate my phone so I got rid of it](https://youtu.be/nnsyGSTKlw0)
+- [The modern web sucks. My band's website doesn't.](https://youtu.be/4_bYUVGgQQo)
+- [ I Recreated Shazam's Algorithm from Scratch because no one is hiring jnr devs](https://youtu.be/a0CVCcb0RJM)
 
 ## 🎬 Video raccolta su self hosting e linux
 
