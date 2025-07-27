@@ -88,6 +88,10 @@ Ed e qua che viene in aiuto questa pagina.. una lista di video, musica, libri e 
 - [I hate my phone so I got rid of it](https://youtu.be/nnsyGSTKlw0)
 - [The modern web sucks. My band's website doesn't.](https://youtu.be/4_bYUVGgQQo)
 - [ I Recreated Shazam's Algorithm from Scratch because no one is hiring jnr devs](https://youtu.be/a0CVCcb0RJM)
+- [Fasi di utilizzo di Linux](https://www.youtube.com/watch?v=OZeCN_DdqaM)
+- [How I won Hyprland's 4th ricing competition](https://www.youtube.com/watch?v=DxEKF0cuEzc)
+- [How THRICE SHATTERED Expectations and Rewrote Post-Hardcore Forever](https://www.youtube.com/watch?v=lYEmvFe1z8E)
+
 
 ## 🎬 Video raccolta su self hosting e linux
 
