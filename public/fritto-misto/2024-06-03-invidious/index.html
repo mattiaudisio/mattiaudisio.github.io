@@ -1,0 +1,111 @@
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Come ho installato localmente invidious | Mattia Audisio</title>
+<meta name=keywords content="👨‍💻 Echo 404,👨‍💻 selfhosting,👨‍💻 privacy"><meta name=description content="Un mondo alternativo di guardare YouTube"><meta name=author content="Mattia Audisio"><link rel=canonical href=https://mattiaudisio.github.io/fritto-misto/2024-06-03-invidious/><meta name=google-site-verification content="XYZabc"><meta name=yandex-verification content="XYZabc"><meta name=msvalidate.01 content="XYZabc"><link crossorigin=anonymous href=/assets/css/stylesheet.f9fab6a8edf6271d64cb568cede719631a73ee294d96b58f56be286ff8f1910c.css integrity="sha256-+fq2qO32Jx1ky1aM7ecZYxpz7ilNlrWPVr4ob/jxkQw=" rel="preload stylesheet" as=style><link rel=icon href=https://mattiaudisio.github.io/images/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://mattiaudisio.github.io/images/favicon.ico><link rel=icon type=image/png sizes=32x32 href=https://mattiaudisio.github.io/images/favicon.ico><link rel=apple-touch-icon href=https://mattiaudisio.github.io/images/favicon.ico><link rel=mask-icon href=https://mattiaudisio.github.io/images/favicon.ico><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=https://mattiaudisio.github.io/fritto-misto/2024-06-03-invidious/><noscript><style>#theme-toggle,.top-link{display:none}</style></noscript><meta name=fediverse:creator content="@piacerematthew@livellosegreto.it"></head><body class=dark id=top><header class=header><nav class=nav><div class=logo><a href=/fritto-misto accesskey=h title="Torna indietro" style="font-family:lemon yellow sun,courier new,monospace"><span style=color:red>←</span> Fritto Misto</a></div></div></nav></header><main class=main><article class=post-single><header class=post-header><div class=entry-header-2><div class=post-meta><span title='2024-06-03 21:02:25 +0200 CEST'>June 3, 2024</span>&nbsp;·&nbsp;3 min</div></div><h1 class="post-title entry-hint-parent">Come ho installato localmente invidious</h1><div class=post-description>Un mondo alternativo di guardare YouTube</div></header><div class=post-content><p>Piccolo articolo veloce per spiegare come installare localmente una propria istanza invidious, in modo da vedere i video dei tuoi youtuber preferiti senza essere tracciato da YouTube.</p><h2 id=pacchetti-richiesti>Pacchetti richiesti<a hidden class=anchor aria-hidden=true href=#pacchetti-richiesti>#</a></h2><p>Invidious può essere installato sia tramite Docker che tramite Podman, ma in questo caso vedremo la seconda opzione.</p><p>Quindi, prima di cominciare, bisogna installare Podman sul nostro computer tramite questo comando:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl> sudo dnf install podman-compose pwgen
+</span></span></code></pre></div><p>Ora possiamo cominciare.</p><h2 id=installare-invidious>Installare Invidious<a hidden class=anchor aria-hidden=true href=#installare-invidious>#</a></h2><p>In primis bisogna scaricare la Github il repository ufficiale di Invidious ed entrare dentro la directory appena creata</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>git clone https://github.com/iv-org/invidious.git
+</span></span><span class=line><span class=cl><span class=nb>cd</span> invidious
+</span></span></code></pre></div><p>Il passo successivo consiste nell&rsquo;editare il file <em>docker-compose.yml</em> con queste modifiche:</p><p><strong>Aggiungi l&rsquo;image di Invidious</strong>:</p><pre><code>image: quay.io/invidious/invidious:latest
+</code></pre><p><strong>Cambiare la Porta</strong>:</p><pre><code> ports: - &quot;3000:3000&quot;
+</code></pre><p><strong>Cambiare l&rsquo;hmac_key</strong>. È necessario impostare un valore casuale generato per il parametro hmac_key. Su Linux è possibile generarlo utilizzando il comando <em>pwgen 20 1</em></p><pre><code>.Prima
+hmac_key: &quot;CHANGE_ME!!&quot;
+
+.Dopo
+hmac_key: saeNg5xufooraofeevee
+</code></pre><p>A fine modifiche, il file docker_compose.yml deve assomigliare a questo qui sotto:</p><pre><code># Warning: This docker-compose file is made for development purposes.
+# Using it will build an image from the locally cloned repository.
+#
+# If you want to use Invidious in production, see the docker-compose.yml file provided
+# in the installation documentation: https://docs.invidious.io/installation/
+
+# Warning: This docker-compose file is made for development purposes.
+# Using it will build an image from the locally cloned repository.
+#
+# If you want to use Invidious in production, see the docker-compose.yml file provided
+# in the installation documentation: https://docs.invidious.io/installation/
+
+version: &quot;3&quot;
+services:
+
+ invidious:
+ image: quay.io/invidious/invidious:latest
+ build:
+      context: .
+     dockerfile: docker/Dockerfile
+    restart: unless-stopped
+    ports:
+        - &quot;3000:3000&quot;
+    environment:
+    # Please read the following file for a comprehensive list of all available
+    # configuration options and their associated syntax:
+    # https://github.com/iv-org/invidious/blob/master/config/config.example.yml
+    INVIDIOUS_CONFIG: |
+        db:
+            dbname: invidious
+            user: kemal
+            password: kemal
+            host: invidious-db
+            port: 5432
+        check_tables: true
+        # external_port:
+        # domain:
+        # https_only: false
+        # statistics_enabled: false
+        hmac_key: Ees6vou2IekaipeiCeib
+    healthcheck:
+        test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/comments/jNQXAC9IVRw || exit 1
+        interval: 30s
+        timeout: 5s
+        retries: 2
+    depends_on:
+     - invidious-db
+
+    invidious-db:
+        image: docker.io/library/postgres:13
+        restart: unless-stopped
+        volumes:
+            - postgresdata:/var/lib/postgresql/data
+            - ./config/sql:/config/sql
+            - ./docker/init-invidious-db.sh:/docker-entrypoint-initdb.d/init-invidious-db.sh
+        environment:
+            POSTGRES_DB: invidious
+            POSTGRES_USER: kemal
+            POSTGRES_PASSWORD: kemal
+        healthcheck:
+            test: [&quot;CMD-SHELL&quot;, &quot;pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB&quot;]
+
+    volumes:
+        postgresdata:
+</code></pre><br><p><strong>Piccola nota a margine</strong>: A causa di vari problemi, Invidious deve essere riavviato spesso, almeno una volta al giorno, idealmente ogni ora.</p><h2 id=eseguire-invidious>Eseguire invidious<a hidden class=anchor aria-hidden=true href=#eseguire-invidious>#</a></h2><p>Per eseguire Invidious, basta entrare dentro la directory <em>invidious</em> ed eseguire il comando <em>podman-compose up</em></p><pre><code> cd invidious/
+ podman-compose up
+</code></pre><p>Per ottimizzare quest&rsquo;operazione ho creato un piccolo script shell che mi permette di accendere, spegnere e aggiornare invidious</p><pre><code> #!/bin/bash
+
+ clear
+ # Mostra il primo menu
+ echo &quot;Scegli un'opzione:&quot;
+ echo &quot;1. Accendi&quot;
+ echo &quot;2. Spegni&quot;
+ echo &quot;3. aggiorna&quot;
+ read -p &quot;Inserisci il numero corrispondente: &quot; scelta
+
+ # Esegui l'azione in base alla scelta
+ case $scelta in
+     1)  cd invidious/ # Cambia la directory in &quot;invidious/&quot;
+         podman-compose up # Esegui &quot;podman-compose up&quot;
+         ;;
+    
+     2)
+         cd invidious/
+         podman-compose stop
+         echo &quot;Invidious spento!&quot;
+         ;;
+     3)
+         cd invidious/
+         podman-compose pull
+         podman-compose up -d
+         podman image prune -f
+         echo &quot;Invidious aggiornato!&quot;
+         ;;
+ esac
+</code></pre></div><footer class=post-footer><ul class=post-tags><li><a href=https://mattiaudisio.github.io/tags/-echo-404/>👨‍💻 Echo 404</a></li><li><a href=https://mattiaudisio.github.io/tags/-selfhosting/>👨‍💻 Selfhosting</a></li><li><a href=https://mattiaudisio.github.io/tags/-privacy/>👨‍💻 Privacy</a></li></ul><ul class=share-buttons><li>Condividi su →</li><li><a target=_blank rel="noopener noreferrer" aria-label="share Come ho installato localmente invidious on Mastodon" href="https://mastodonshare.com/?url=https%3a%2f%2fmattiaudisio.github.io%2ffritto-misto%2f2024-06-03-invidious%2f">Mastodon</a></li><li><a target=_blank rel="noopener noreferrer" aria-label="share Come ho installato localmente invidious on telegram" href="https://telegram.me/share/url?text=Come%20ho%20installato%20localmente%20invidious&amp;url=https%3a%2f%2fmattiaudisio.github.io%2ffritto-misto%2f2024-06-03-invidious%2f">Telegram</a></li></ul></footer></article></main><footer class=footer><div id=banner class=banner><div style=max-width:20%;max-height:20%><img style=max-height:1.5em src=/icon/banner/any_browser.svg></div><div style=max-width:100%;max-height:100%><img style=max-height:1.5em src=/icon/banner/anythingbut.svg></div><div style=max-width:20%;max-height:20%><img style=max-height:1.5em src=/icon/banner/computer.svg></div><div style=max-width:20%;max-height:20%><img style=max-height:1.5em src=/icon/banner/ihatemicrosoft.svg></div><div style=max-width:20%;max-height:20%><img style=max-height:1.5em src=/icon/banner/linuxnow.svg></div><div style=max-width:20%;max-height:20%><img style=max-height:1.5em src=/icon/banner/minedeeznuts.svg></div></div><br><span>&copy; 2025 <a href=https://mattiaudisio.github.io/>Mattia Audisio</a></span> | Se incontri il Buddha per strada non t'improvvisare ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script></body></html>

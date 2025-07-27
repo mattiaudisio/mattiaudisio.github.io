@@ -10,9 +10,9 @@
     <atom:link href="https://mattiaudisio.github.io/tags/-astrojs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Astro Framework Setup Tutorial</title>
-      <link>https://mattiaudisio.github.io/fritto-misto/astrosetup/</link>
+      <link>https://mattiaudisio.github.io/fritto-misto/2022-10-06-astrosetup/</link>
       <pubDate>Thu, 06 Oct 2022 20:19:50 +0200</pubDate>
-      <guid>https://mattiaudisio.github.io/fritto-misto/astrosetup/</guid>
+      <guid>https://mattiaudisio.github.io/fritto-misto/2022-10-06-astrosetup/</guid>
       <description>Come installare il framework Astro all&amp;#39;interno del tuo sito web</description>
     </item>
   </channel>

@@ -10,9 +10,9 @@
     <atom:link href="https://mattiaudisio.github.io/tags/-laravel/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Implementare le API di Google Calendar sul tuo sito Laravel</title>
-      <link>https://mattiaudisio.github.io/fritto-misto/laravel-calendar-api/</link>
+      <link>https://mattiaudisio.github.io/fritto-misto/2025-04-18-laravel-calendar-api/</link>
       <pubDate>Fri, 18 Apr 2025 22:53:54 +0200</pubDate>
-      <guid>https://mattiaudisio.github.io/fritto-misto/laravel-calendar-api/</guid>
+      <guid>https://mattiaudisio.github.io/fritto-misto/2025-04-18-laravel-calendar-api/</guid>
       <description>Piccolo tutorial fatto per evitare altre novantamila bestemmie</description>
     </item>
   </channel>

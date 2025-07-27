@@ -10,23 +10,23 @@
     <atom:link href="https://mattiaudisio.github.io/tags/-python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>una capsula del tempo pieno di codice Python</title>
-      <link>https://mattiaudisio.github.io/fritto-misto/python/</link>
+      <link>https://mattiaudisio.github.io/fritto-misto/2025-07-13-python/</link>
       <pubDate>Sun, 13 Jul 2025 10:19:25 +0200</pubDate>
-      <guid>https://mattiaudisio.github.io/fritto-misto/python/</guid>
+      <guid>https://mattiaudisio.github.io/fritto-misto/2025-07-13-python/</guid>
       <description>Un post-raccolta per fare spazio, fare ordine, e magari anche un po’ pace con Python</description>
     </item>
     <item>
       <title>Creare un intero podcast artificialmente</title>
-      <link>https://mattiaudisio.github.io/fritto-misto/podcastartificiales/</link>
+      <link>https://mattiaudisio.github.io/fritto-misto/2023-12-20-podcastartificiales/</link>
       <pubDate>Wed, 20 Dec 2023 21:07:49 +0200</pubDate>
-      <guid>https://mattiaudisio.github.io/fritto-misto/podcastartificiales/</guid>
+      <guid>https://mattiaudisio.github.io/fritto-misto/2023-12-20-podcastartificiales/</guid>
       <description>Anche detto: &amp;#34;mega sega mentale fatta dopo aver letto un Toot&amp;#34;</description>
     </item>
     <item>
       <title>Come fare un Website Blocker con Python</title>
-      <link>https://mattiaudisio.github.io/fritto-misto/websiteblocker/</link>
+      <link>https://mattiaudisio.github.io/fritto-misto/2022-08-16-websiteblocker/</link>
       <pubDate>Tue, 16 Aug 2022 22:02:53 +0200</pubDate>
-      <guid>https://mattiaudisio.github.io/fritto-misto/websiteblocker/</guid>
+      <guid>https://mattiaudisio.github.io/fritto-misto/2022-08-16-websiteblocker/</guid>
       <description>Liberati dei siti che non sopporti grazie a Python</description>
     </item>
   </channel>

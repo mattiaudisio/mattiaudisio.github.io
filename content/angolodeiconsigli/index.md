@@ -168,3 +168,4 @@ Ed e qua che viene in aiuto questa pagina.. una lista di video, musica, libri e 
 - [Just fucking use HTML](https://justfuckingusehtml.com/)
 - [Linux Path](https://www.linux-path.com/en)
 - [How do I stop using Big Tech products?](https://www.rebeltechalliance.org/stopusingbigtech.html)
+- [mavica the robot](https://maple.pet/)
