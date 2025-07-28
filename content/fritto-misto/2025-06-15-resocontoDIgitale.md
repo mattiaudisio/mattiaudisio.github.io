@@ -102,6 +102,7 @@ Ho deciso di fare pulizia dei mie preferiti di Github, togliendo quello che effe
 **Per Telefoni**
 - [tutorial ios voice recorder](https://github.com/vasiliy-l/tutorial-ios-voice-recorder) _(A simple voice recording app in Swift)_
 - [ReVanced](https://revanced.app/) _(Customize your mobile experience through ReVanced by applying patches to your applications.)_
+- [OuterTune](https://github.com/OuterTune/OuterTune) _(A Material 3 Music Player for Android with local file & YouTube Music support)_
 
 ---
 
