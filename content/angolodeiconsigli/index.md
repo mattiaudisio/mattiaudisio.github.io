@@ -91,6 +91,8 @@ Ed e qua che viene in aiuto questa pagina.. una lista di video, musica, libri e 
 - [Fasi di utilizzo di Linux](https://www.youtube.com/watch?v=OZeCN_DdqaM)
 - [How I won Hyprland's 4th ricing competition](https://www.youtube.com/watch?v=DxEKF0cuEzc)
 - [How THRICE SHATTERED Expectations and Rewrote Post-Hardcore Forever](https://www.youtube.com/watch?v=lYEmvFe1z8E)
+- [Ho DISSATO @MoreThanTech!🔥Ed ho trovato di TUTTO...](https://youtu.be/n3FILjMChDw?feature=shared)
+- [FInalmente MVVblog in studio! | Just Chatting con Dario Moccia e Marco Valleggi](https://youtu.be/LWTeWZNGsgU?feature=shared)
 
 
 ## 🎬 Video raccolta su self hosting e linux
@@ -151,6 +153,8 @@ Ed e qua che viene in aiuto questa pagina.. una lista di video, musica, libri e 
 - [Creo dentro le piattaforme, dunque sono schiavo.](https://beboguidetti.it/2025/05/27/creo-dentro-le-piattaforme-dunque-sono-schiavo/)
 - [So You Decided to Swap to Linux?](https://the-kjellberg-mail.beehiiv.com/p/so-you-decided-to-swap-to-linux-60ec908e80b94df7)
 - [How to Be Anonymous on Social Media](https://nbtv.substack.com/p/how-to-be-anonymous-on-social-media)
+- [Sono tre anni che uso un laptop incredibile: ode al mio Thinkpad x270](https://dottorblaster.it/2025/08/thinkpad-x270/)
+- [Ho comprato un portatile nuovo, ovvero come ho configurato Arch Linux sul mio Thinkpad X1 Extreme](https://dottorblaster.it/2021/10/x1-extreme/)
 
 ## 🔗 Siti web
 
@@ -174,3 +178,5 @@ Ed e qua che viene in aiuto questa pagina.. una lista di video, musica, libri e 
 - [How do I stop using Big Tech products?](https://www.rebeltechalliance.org/stopusingbigtech.html)
 - [mavica the robot](https://maple.pet/)
 - [bu.noblogs.org](https://bu.noblogs.org/)
+- [Eric Murphy](https://ericmurphy.xyz/)
+- [Fabio Lovato](https://loviuz.it/)
