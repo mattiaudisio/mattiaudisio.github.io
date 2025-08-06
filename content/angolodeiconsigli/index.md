@@ -155,6 +155,7 @@ Ed e qua che viene in aiuto questa pagina.. una lista di video, musica, libri e 
 - [How to Be Anonymous on Social Media](https://nbtv.substack.com/p/how-to-be-anonymous-on-social-media)
 - [Sono tre anni che uso un laptop incredibile: ode al mio Thinkpad x270](https://dottorblaster.it/2025/08/thinkpad-x270/)
 - [Ho comprato un portatile nuovo, ovvero come ho configurato Arch Linux sul mio Thinkpad X1 Extreme](https://dottorblaster.it/2021/10/x1-extreme/)
+- [Node.js e Typescript: corso base online](https://lacerba.io/node-js-tutorial-italiano)
 
 ## 🔗 Siti web
 
